@@ -6,25 +6,65 @@
   --background-color: #feffff;
   --background-color-2: #def2f1;
   /* Dimens */
-  --side-nav-dimen: 320px;
+  --side-nav-dimen: 360px;
 }
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
+}
+html, body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .font-roboto {
   font-family: 'Roboto', sans-serif;
 }
-.background-color {
+.btn {
   background: var(--background-color);
 }
 
-.side-nav {
-  width: var(--side-nav-dimen);
+#menu-btn {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-box-shadow: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
   background: var(--primary-color);
-  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+#menu-icon {
+  color: var(--accent-color);
+}
+#drawer-panel {
+  position: absolute;
+  width: var(--side-nav-dimen);
+}
+#back-panel {
+  background: var(--primary-color);
+  overflow: hidden;
+}
+#front-panel {
+  background: var(--background-color);
+  margin-left: var(--side-nav-dimen);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-box-shadow: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  position: relative;
+  overflow: auto;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Dimens */
+    --side-nav-dimen: 240px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #menu-btn {
+    display: none;
+  }
 }
