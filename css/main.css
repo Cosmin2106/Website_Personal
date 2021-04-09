@@ -1,0 +1,30 @@
+:root {
+  /* Colors */
+  --primary-color: #3aafa9;
+  --secondary-color: #2b7a78;
+  --accent-color: #17252a;
+  --background-color: #feffff;
+  --background-color-2: #def2f1;
+  /* Dimens */
+  --side-nav-dimen: 320px;
+}
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  height: 100%;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+.background-color {
+  background: var(--background-color);
+}
+
+.side-nav {
+  width: var(--side-nav-dimen);
+  background: var(--primary-color);
+  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
