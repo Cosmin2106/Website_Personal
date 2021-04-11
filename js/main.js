@@ -1,8 +1,12 @@
+let currentPage = window.location.pathname.split("/").pop();
 var btnMenuOpen = false;
 
 $(document).ready(function() {
   $('body').bootstrapMaterialDesign();
   resizeCfg();
+  if (currentPage == 'other.html') {
+    loadPics(9);
+  }
 });
 
 $(window).resize(resizeCfg);
@@ -28,5 +32,13 @@ function resizeCfg() {
     $('#front-panel').css('margin-left', 0);
     $('#front-panel').css('min-width', window.innerWidth + 'px');
     btnMenuOpen = false;
+  }
+
+  if (window.innerHeight < 430) {
+    $('#normal-drawer-btn-list').css('display', 'none');
+    $('#small-drawer-btn-list').css('display', 'block');
+  } else {
+    $('#small-drawer-btn-list').css('display', 'none');
+    $('#normal-drawer-btn-list').css('display', 'block');
   }
 }

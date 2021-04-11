@@ -1,10 +1,10 @@
 :root {
   /* Colors */
-  --primary-color: #3aafa9;
-  --secondary-color: #2b7a78;
-  --accent-color: #17252a;
+  --primary-color: #7395ae;
+  --secondary-color: #1a2c39;
+  --accent-color: #7c6e63;
   --background-color: #feffff;
-  --background-color-2: #def2f1;
+  --background-color-2: #dee3f2;
   /* Dimens */
   --side-nav-dimen: 360px;
 }
@@ -20,8 +20,18 @@ html, body {
 h1, h3 {
   font-family: 'Lexend', sans-serif;
   font-weight: 700;
+  color: var(--secondary-color);
+}
+a {
+  color: var(--secondary-color);
 }
 
+.hidden {
+  display: none;
+}
+.accent-col {
+  color: var(--accent-color);
+}
 .btn {
   background: var(--background-color);
 }
@@ -30,12 +40,33 @@ h1, h3 {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
   opacity: 0.1;
 }
 .social {
   width: 36px;
   height: 36px;
+}
+.content-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content-list > li {
+  padding: 6px;
+}
+.pics {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-box-shadow: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.pics:hover {
+  width: 90%;
+  height: 90%;
+  border-radius: 24px;
 }
 
 #surname {
@@ -44,7 +75,7 @@ h1, h3 {
 }
 #name {
   font-size: 48px;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 #menu-btn {
   top: 16px;
@@ -53,9 +84,10 @@ h1, h3 {
   transition: all 0.2s ease-out;
   background: var(--primary-color);
   position: fixed;
+  z-index: 2;
 }
 #menu-icon {
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 #drawer-panel {
   position: absolute;
@@ -88,7 +120,7 @@ h1, h3 {
   font-family: 'Lexend', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 #drawer-footer {
   width: 100%;
@@ -105,7 +137,7 @@ h1, h3 {
   opacity: 0.7;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   :root {
     /* Dimens */
     --side-nav-dimen: 240px;
@@ -117,5 +149,11 @@ h1, h3 {
 @media screen and (min-width: 992px) {
   #menu-btn {
     display: none;
+  }
+}
+@media (max-height: 550px) {
+  #drawer-items > li {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }

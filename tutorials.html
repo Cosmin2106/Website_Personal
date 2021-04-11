@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home | C. Aprodu</title>
+    <title>Tutorials - Aprodu</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Lexend:400,700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
@@ -16,12 +16,30 @@
           <h1 id="surname">Andrei-Cosmin</h1>
           <h1 id="name">Aprodu</h1>
           <div class="divider mt-4"></div>
-          <div class="mt-4 w-100">
+          <div id="small-drawer-btn-list" class="mt-2 w-100 hidden">
+            <div class="row">
+              <div class="col">
+                <span class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='index.html'">Home</span>
+              </div>
+              <div class="col">
+                <span class="list-group-item ripple rounded d-flex flex-column align-items-center">Tutorials</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='contact.html'">Contact</span>
+              </div>
+              <div class="col">
+                <span class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='other.html'">Other Projects</span>
+              </div>
+            </div>
+          </div>
+          <div id="normal-drawer-btn-list" class="mt-4 w-100">
             <ul id="drawer-items" class="list-group">
               <li class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='index.html'">Home</li>
               <li class="list-group-item ripple rounded d-flex flex-column align-items-center">Tutorials</li>
               <li class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='contact.html'">Contact</li>
-              <li class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='other.html'">Other</li>
+              <li class="list-group-item ripple rounded d-flex flex-column align-items-center" onclick="location.href='other.html'">Other Projects</li>
             </ul>
           </div>
         </div>
@@ -48,20 +66,19 @@
           <span id="menu-icon" class="material-icons m-3">menu</span>
         </button>
         <div id="content-panel" class="container pt-4">
-          <h1 class="ml-5 pl-3 py-2">Tutorials</h1>
+          <h1 class="ml-5 pl-4 py-2">Tutorials</h1>
           <div class="divider mt-2 mb-3"></div>
+          <p>Here you will find all the <b>documents</b> I will be using during my time being a tutor and the <b>anouncements</b> I will make if something comes up. I will try to maintain this page up-to-date with the course materials and the changes of my own files. If you see something off with any of the published materials, please <u><a href="contact.html">let me know</a></u>.</p>
 
-          <h3>Lineare Algebra für Informatik - 20/21</h3>
-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor id tellus sit amet maximus. Etiam eget ligula sit amet ex tincidunt molestie sed sit amet nulla. Donec euismod quam et odio tempor faucibus. Phasellus nec dictum ante, sit amet pretium justo. Aenean pulvinar nulla vitae dolor suscipit facilisis. Donec interdum velit ut arcu tristique consectetur. Suspendisse malesuada volutpat nibh, quis aliquet lorem malesuada ac.
-
-          Nulla dapibus massa justo, vitae malesuada dui tempor at. Proin id libero vitae mauris sagittis dapibus non nec neque. Proin nec sagittis mauris, a feugiat tortor. Quisque posuere pellentesque lacus, vel sodales libero tincidunt at. Nam ullamcorper nisl non tellus faucibus, venenatis gravida felis efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat est sed arcu maximus, sed laoreet sem efficitur. Mauris placerat fermentum lectus, id porttitor dolor aliquet vel. Proin dictum tincidunt tempor. Integer ac libero non quam viverra vulputate ut vitae felis.
-
-          Phasellus ac laoreet massa. Duis tincidunt odio libero, nec varius mauris aliquet ut. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam non volutpat arcu. Ut maximus iaculis dolor, at ullamcorper elit suscipit at. Suspendisse dolor urna, luctus eu facilisis eget, posuere quis arcu. Fusce auctor, nibh quis feugiat facilisis, magna nisl consequat diam, eget consequat turpis urna a ligula. In hac habitasse platea dictumst. Ut magna massa, malesuada sed nisl sit amet, ullamcorper ullamcorper nisl. Sed ut elit mattis, euismod nisl tincidunt, rutrum velit. Nunc et consequat lacus, at accumsan erat. Mauris dignissim mi sit amet leo auctor tincidunt nec sed nunc.
-
-          In quis nunc a mi tempor mattis. Curabitur mollis ut nulla in tristique. Ut eu eros risus. Cras placerat ornare finibus. Sed placerat ut sapien eget dapibus. Donec vehicula pharetra nisi, in varius dui hendrerit sed. Nullam lacinia, dolor id dapibus finibus, tellus lacus viverra sem, non hendrerit lacus odio iaculis nulla. Donec vehicula ex ipsum, ut maximus ante mattis sed. Aliquam vestibulum fermentum malesuada.
-
-          Vivamus tincidunt mauris blandit ex porttitor, id egestas urna gravida. Aliquam erat volutpat. Morbi venenatis nisl non eros consequat suscipit. Pellentesque nec rutrum ligula. Proin cursus, augue sed luctus feugiat, dui neque sodales lorem, quis porttitor tortor massa sit amet enim. Aliquam faucibus augue id purus volutpat, vel luctus nunc sollicitudin. In lacinia turpis vel lacus rhoncus, eget efficitur dolor interdum. Donec venenatis maximus diam ac consectetur. Nullam id ante sapien. Proin aliquam fermentum lacus, at blandit eros egestas a. Mauris mattis dui et diam dapibus, non ultrices ipsum semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum pharetra porta purus eget fermentum. Aliquam imperdiet erat quam, et ultricies massa aliquet sit amet.
+          <h3 class="mt-5">Lineare Algebra für Informatik - SoSe 21</h3>
+          <!-- <div class="mt-4">
+            <p class="text-bold content-subtitle">Woche 1:</p>
+            <ul class="content-list">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </div> -->
         </div>
       </div>
     </div>
