@@ -1,12 +1,12 @@
 let currentPage = window.location.pathname.split("/").pop();
 var btnMenuOpen = false;
 var firebaseConfig = {
-
-  };
+    
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
 $(document).ready(function() {
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
   $('body').bootstrapMaterialDesign();
   resizeCfg();
   if (currentPage == 'other.html') {

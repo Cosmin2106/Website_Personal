@@ -157,3 +157,14 @@ a {
     padding-bottom: 14px;
   }
 }
+@media (max-height: 350px) {
+  #divide-title {
+    display: none;
+  }
+}
+@media (max-height: 300px) {
+  #drawer-footer {
+    pointer-events: none;
+    opacity: 0;
+  }
+}
