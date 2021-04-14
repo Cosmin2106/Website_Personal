@@ -1,8 +1,6 @@
 let currentPage = window.location.pathname.split("/").pop();
 var btnMenuOpen = false;
-var firebaseConfig = {
-    
-};
+
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
