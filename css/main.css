@@ -57,6 +57,9 @@ a {
   font-weight: bold;
   color: var(--secondary-color);
 }
+.content-subtitle-3 {
+  margin-top: -8px;
+}
 .content-list > li {
   padding: 6px;
 }
