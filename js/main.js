@@ -2,7 +2,7 @@ let currentPage = window.location.pathname.split("/").pop();
 var btnMenuOpen = false;
 
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+const analytics = firebase.analytics();
 
 $(document).ready(function() {
   $('body').bootstrapMaterialDesign();
@@ -24,6 +24,13 @@ $('#menu-btn').on('click', function() {
       btnMenuOpen = false;
     }
   }
+});
+
+$('.tc1').on('click', function(event) {
+  analytics.logEvent('linalg_res', {
+    doc_name: $(event.target).parent().parent().text(),
+    doc_link: $(event.target).attr('href')
+  });
 });
 
 function resizeCfg() {
