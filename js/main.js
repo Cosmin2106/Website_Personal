@@ -28,7 +28,6 @@ $('#menu-btn').on('click', function() {
 
 $('.tc1').on('click', function(event) {
   analytics.logEvent('linalg_res', {
-    doc_name: $(event.target).parent().parent().text(),
     doc_link: $(event.target).attr('href')
   });
 });
